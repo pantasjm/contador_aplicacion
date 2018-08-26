@@ -215,4 +215,5 @@ h2 {
 .fotos_nuevas {
     height: 250px;
     margin: 5px;
+    display: inline;
 }
