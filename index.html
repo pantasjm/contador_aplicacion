@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+    <title>Contador de personas</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--JQuery-->
+    
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel="stylesheet" href="js/jquery-ui.min.css">
+    <script src="js/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    
+    <script>
+        $(document).on('ready',function() {
+            $( "#accordion" ).accordion();
+        });
+    </script>
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand conejo" href="#anchor1"><img class="conejo" src="www/reloj.png"></img></a>
+        </div>
+        <div>
+          <ul class="navigation nav navbar-nav navbar-right">
+                <li><a href="#anchor2">El proyecto</a></li>
+                <li><a href="index.html#anchor3">La aplicación</a></li> 
+                <li><a href="index.html#anchor4">El equipo</a></li>
+                <li><a href="index.html#anchor5">Contacto</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <a class="anchor" name="anchor1">
+        <div class="portada">
+            <div class="titulo container">
+                <div class="texto-portada">Contador de personas</div>
+                <div class="texto-subtitulo">La solución del Retail</div>
+            </div>
+        </div>
+    </a>
+        
+    <a class="anchor" name="anchor2">
+        <div>
+            <div class="about-me container row">
+                <div class="about-me-image col-md-6">
+                    <img class="rostro" src="www/counter2.png"></img>
+                </div>
+                <div class="about-me-text col-md-6">
+                    <div class="texto">
+                        <h1>El Proyecto</h1>
+                        <h4>Cuando una empresa del sector retail busca un nuevo local para su cadena, siempre evalúa el flujo de personas que pasan frente al local.</h4>
+                        <h4>Este cálculo se realiza de <b>manera manual</b> y toma mucho tiempo, dado que no se cuenta con la cantidad necesaria de personal para evaluar todos los puntos en el mapa.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    
+  
+        <div class="data-projects-back" name=anchor3>
+            <div class="data-projects container row">
+                <a class="anchor" name="anchor3">
+                    <div class="data-project-text col-md-6">
+                        <div class="texto-blanco">
+                            <h1>Nuestra propuesta</h1>
+                            <h4>Mediante el uso de un sensor <b>Arduino</b> elaboramos un aplicativo que permite contar el número de personas que cruzan una ubicación específica, así como otros indicadores de interés para la toma de decisiones. </h4>
+                        </div>
+                    </div>
+                </a>
+                <div class="data-project-selection col-md-6">
+                    <div class="texto-blanco">
+                        <h2>¿Qué necesitamos para su realización?</h2>
+                        <div id="accordion">
+                            <h3>Internet or Things</h3>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                    Sensor infrarrojo que detecta el cruce de una persona, sensor de humedad y temperatura.
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <img class="dashboard" src="www/arduino.png">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <h3>Web development</h3>
+                            <div>
+                                <table><tr>
+                                    <td>
+                                        <p>
+                                    Usamos R Studio para la visualización de la información y la representamos en una página web estática con HTML, CSS y Javascript. 
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <img class="dashboard" src="www/javascript.png">
+                                    </td>
+                                </tr></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    <a class="anchor" name="anchor4">
+        <div class="finance-and-more container" name=anchor4>
+            <div class="finance-and-more-contenedor">
+                <div class="row">
+                    <h1>Nuestra aplicación</h1>
+                    <h3>Esta es la aplicación que diseñamos. Aún se encuentra en versión beta, pero tiene la funcionalidad deseada.</h3>
+                </div>
+                <br>
+                <br>
+                
+                <iframe src="https://rpp.pe" class="aplicacion"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </a>
+    
+    <a class="anchor" name="anchor5">
+        <div class="contact-back" name=anchor5>
+            <div class="contact texto-blanco container">
+                <div class="row">
+                    <h1>Nuestro equipo</h1>
+                </div>
+                <br>
+                <br>
+                <div class="iconos-contacto row">
+                    <ul>
+                        <li class="contact-list"><a href="https://github.com/pantasjm"><img class="icono" src="images/github.svg"></a></li>
+                        <li class="contact-list"><a href="https://www.facebook.com/jmpantasanchez"><img class="icono" src="images/facebook.png"></a></li>
+                        <li class="contact-list"><a href="mailto:pantasjm@gmail.com"><img class="icono" src="images/email.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div class="question">
+        <div class="question-contenedor container">
+            <div class="package">
+                <img class="secret-icon icono" src="images/secret.png">
+                <h3 class="secret-text"><a class="secret-reference" href="mailto:pantasjm@gmail.com">Contáctanos</a></h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
